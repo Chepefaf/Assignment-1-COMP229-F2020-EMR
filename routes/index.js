@@ -30,13 +30,14 @@ project3:'08/2012- 12/2012 - Simplistic Cooling System with AtMega 16 microcontr
 
 /* GET Services page. THIS IS ONE ROUTE AND IT IS TO GET TO SERVICES*/
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Servicessss'});
+  res.render('services', { title: 'Services'});
 });
 
 
 /* GET Contact Us page. THIS IS ONE ROUTE AND IT IS TO GET TO CONTACT*/
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact Me' });
+  res.render('contact', { title: 'Contact Me',
+message:'Leave me a message' });
 });
 
 module.exports = router;
