@@ -10,6 +10,11 @@ let  usersRouter = require('./routes/users');
 
 let  app = express();
 
+//Static Files
+
+app.use(express.static('public'))
+app.use('/images',express.static(__dirname + 'public/images'))
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
