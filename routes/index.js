@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Welcome to my Personal Portfolio. I really apreciate your interest.',});
 });
 
-/* GET home page. THIS IS ONE ROUTE AND IT IS TO GET TO HOME*/
+/* GET home page. THIS IS ONE ROUTE AND IT IS TO GET TO HOME. ADDED A WELCOME MESSAGE TO BE PASSES THROUGH THE ROUTE WITH THE USE OF A VARIABLE*/
 router.get('/home', function(req, res, next) {
   res.render('home', { title: 'Welcome to my Personal Portfolio. I really apreciate your interest.'});
 });
@@ -17,10 +17,12 @@ router.get('/home', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Who am I...',
 name:"Edgar Adrian Mejia Razo",
-paragraph:"Im an Electronic Systems, Software and Telecommunications Engineer; with over 4 years of experience in analysis and preparation of projects. Interested in developing technical skills and knowledge by contributing to the overall and particular objectives of the company"});
+paragraph:"Im an Electronic Systems, Software and Telecommunications Engineer; with over 4 years of experience in analysis and preparation of projects. Interested in developing technical skills and knowledge by contributing to the overall and particular objectives of the company",
+key:'Key Competencies',
+resume:'Fell free to have a look at my Resume:'});
 });
 
-/* GET Products page. THIS IS ONE ROUTE AND IT IS TO GET TO PROJECTS*/
+/* GET Products page. THIS IS ONE ROUTE AND IT IS TO GET TO PROJECTS / ADDED NEW VARIABLES FOR DESCRIPTIONS OF PROJECTS*/
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects',
 project1:'12/2014- 08/2009 -  Research on Engineering Project in Creation, Analysis and Reproduction of Binaural Sounds and their therapeutic application.Testing and analysis of sound reproducing devices I was in charge of the whole project. Results showed disminution of stress levels in participants',
@@ -34,7 +36,7 @@ router.get('/services', function(req, res, next) {
 });
 
 
-/* GET Contact Us page. THIS IS ONE ROUTE AND IT IS TO GET TO CONTACT*/
+/* GET Contact Us page. THIS IS ONE ROUTE AND IT IS TO GET TO CONTACT ADDED VARIABLES FOR MESSAGES IN CONTACT PAGE*/
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Me',
 message:'Leave me a message' });

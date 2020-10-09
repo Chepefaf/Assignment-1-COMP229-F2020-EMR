@@ -1,3 +1,5 @@
+/*-- Assignment 1 Web Application Development COMP229 Edgar Adrian Mejia Razo Centennial College 301066027 WINTER 2020 */
+
 // IIFE -- Inmediatly Invoked Function Expression
 (function (){
     function Start()
@@ -6,3 +8,5 @@
     }
     window.addEventListener("load", Start);
 })();
+
+/*-- Assignment 1 Web Application Development COMP229 Edgar Adrian Mejia Razo Centennial College 301066027 WINTER 2020 */
