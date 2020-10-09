@@ -3,12 +3,12 @@ var router = express.Router();
 
 /* GET home page. THIS IS ONE ROUTE AND IT IS TO GET TO HOME*/
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home'});
+  res.render('index', { title: 'Welcome to my Personal Portfolio. I really apreciate your interest.'});
 });
 
 /* GET home page. THIS IS ONE ROUTE AND IT IS TO GET TO HOME*/
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home'});
+  res.render('index', { title: 'Welcome to my Personal Portfolio. I really apreciate your interest.'});
 });
 
 /* GET About Us page. THIS IS ONE ROUTE AND IT IS TO GET TO ABOUT ME PAGE*/
@@ -28,7 +28,7 @@ router.get('/services', function(req, res, next) {
 
 /* GET Contact Us page. THIS IS ONE ROUTE AND IT IS TO GET TO CONTACT*/
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact'});
+  res.render('index', { title: 'Contact Me'});
 });
 
 module.exports = router;
